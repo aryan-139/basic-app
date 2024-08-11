@@ -1,0 +1,13 @@
+<h1 class="text-4xl font-bold text-center my-4">Angular Test App</h1>
+
+<!--Add/ Edit Item-->
+<div class="w-70 p-4 border border-gray-300">
+<div *ngFor="let item of dummy" class="bg-gray-200 p-4 rounded-lg shadow-md my-2">
+  <h3 class="text-xl font-semibold text-blue-600">Item: {{item.title}}</h3>
+  <h4 class="text-lg text-gray-700">Description: {{item.description}}</h4>
+  <button class="bg-red-700 text-white px-4 py-2 rounded-lg mt-2" (click)="deleteItem(item.id)">Delete</button>
+  <button class="bg-blue-700 text-white px-4 py-2 rounded-lg mt-2 ml-5" (click)="editItem(item.id)">Edit</button>
+</div>
+</div>
+
+<!--Charting Component-->
